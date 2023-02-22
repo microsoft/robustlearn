@@ -14,18 +14,18 @@ LABEL_SET = {
 MODEL_SET = {
     'hug_zs': [ # zero-shot classification using fine-tuned models
         'cross-encoder/nli-deberta-v3-large',
-        'sentence-transformers/nli-roberta-large',
+        # 'sentence-transformers/nli-roberta-large',
         'facebook/bart-large-mnli'
     ], 
     'hug_gen': [   # generative big models using text-generation
         'google/flan-t5-large',
         'facebook/opt-66b',
-        'bigscience/bloomz-7b1',
-        'bigscience/T0pp',
+        # 'bigscience/bloomz-7b1',
+        # 'bigscience/T0pp',
         'bigscience/bloom',
         'EleutherAI/gpt-j-6B',
         'EleutherAI/gpt-neox-20b',
-        'BAAI/glm-10b'
+        # 'BAAI/glm-10b'
 
     ],
     'gpt': [
