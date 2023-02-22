@@ -2,6 +2,11 @@
 
 Latest research in robust machine learning, including adversarial/backdoor attack and defense, out-of-distribution (OOD) generalization, and safe transfer learning.
 
+Hosted projects:
+
+- ChatGPT robustness: [code](./chatgpt-robust/) | Paper: [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](xxx)
+- Stay tuned for more upcoming projects!
+
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a

@@ -1,0 +1,15 @@
+,Unnamed: 0,idx,content,true_label,pred_id
+0,0,0,Can eating precisely advance for dinner lead to weight loss ? Does eating dinner earlier in the evening help with weight loss ?,not_equivalent,equivalent
+2,2,2,How can I create the most thriving question on Quora ? Which are the most popular questions on Quora presently that also create the most discussions ?,not_equivalent,equivalent
+4,4,4,Is it a bad sentence to buy a condo or a house in the Bay Area in 2017 ? Would 2017 be a good time to buy a house in Bay Area ?,equivalent,not_equivalent
+6,6,6,""" Who is the Adam the lyrics to Blink - 182's "" "" Adam's Song "" "" are written about ? "" "" Which Blink - 182 band member wrote the lyrics to "" "" Adam's Yi "" "" ? """,not_equivalent,equivalent
+10,10,10,How wo I buys used car in India ? Which used car should I buy in India ?,not_equivalent,equivalent
+15,15,15,What is one of the biggest misconceptions people have about you ? What do you perceive to be the grands misconception people have about you ? Why do you think this misconception exists ?,equivalent,not_equivalent
+17,17,17,Can you TRANSLATE these to English language?  Cn you translate ths from Bengali to English lagnuage?,not_equivalent,equivalent
+26,26,26, What are the best things to do in Hog Kong? What is the best thing in Hong Kong?,equivalent,not_equivalent
+40,40,40, What is one of the biggest misconceptions people have about y ou? What do you perceive to be the biggest misconception people have about you? Why do you think this misconception exists?,equivalent,not_equivalent
+41,41,41,I ' m going to be US President one day . What should I start doing now to achieve this ? I ' m 16 and I wanted to overthrow te US president someday . What should I pursue doing ?,equivalent,not_equivalent
+43,43,43,What examines operational research ? What is operations research ?,equivalent,not_equivalent
+46,46,46,What are the procedures for becoming an actuary? Why is the procedure of becoming an actuary?,equivalent,not_equivalent
+54,54,54,""" Who be the Adam the lyrics to Blink - 182 ' s "" "" Adam ' s Song "" "" were written about ? "" "" Which Blink - 182 band member wrote the lyrics to "" "" Adam ' s Song "" "" ? """,not_equivalent,equivalent
+72,72,72,Is Barbara Lewis going to be a person? Is Barbara Lewis becoming a person?,equivalent,not_equivalent
