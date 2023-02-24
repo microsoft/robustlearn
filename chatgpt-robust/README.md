@@ -35,9 +35,9 @@ For translation tasks:
 
 ## Results
 
-Note that you will not get the final results by simply running the codes, since the outputs of generative models are not stable. We need some manual process. Bad cases of AdvGLUE and Flipkart are pvovided in [this folder](./result/chatgpt_results/).
+Note that you will not get the final results by simply running the codes, since the outputs of generative models are not stable. We need some **manual processing**. Bad cases of AdvGLUE and Flipkart are pvovided in [this folder](./result/chatgpt_results/).
 
-Here is the summary of the results. Additionally, we also provide all the bad cases of ChatGPT in [`result/chatgpt_results`](./result/chatgpt_results/) folder. Please note that results of all ChatGPT and other LLMs are manually processed by humans.
+Here is the summary of the results.
 
 ### Adversarial robustness for classification.
 
@@ -78,7 +78,7 @@ The metric is F1 score.
 | Model                    | Flipkart | DDXPlus |
 |--------------------------|----------|---------|
 | Random                   | 20       | 4       |
-| DeBERTa-L (435 M)        | 60.6     | 4.5     |
+| DeBERTa-L (435 M)        | **60.6**     | 4.5     |
 | BART-L (407 M)           | 57.8     | 5.3     |
 | GPT-J                    | 28       | 2.4     |
 | T5 (11 B)                | 58.8     | 6.3     |
@@ -88,8 +88,15 @@ The metric is F1 score.
 | BLOOM (176 B)            | 28       | 0.1     |
 | text-davinci-002 (175 B) | 57.5     | 18.9    |
 | text-davinci-003 (175 B) | 57.3     | 19.6    |
-| ChatGPT (175 B)          | 60.6     | 20.2    |
+| ChatGPT (175 B)          | **60.6**     | **20.2**    |
 
 ## Citation
 
-To do.
+```
+@article{wang2013robustness,
+  title={On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective},
+  author={Wang, Jindong and Hu, Xixu and Hou, Wenxin and Chen, Hao and Zheng, Runkai and Wang, Yidong and Yang, Linyi and Huang, Haojun and Ye, Wei and Geng, Xiubo and Jiao, Binxin and Zhang, Yue and Xie, Xing},
+  journal={arXiv preprint arXiv:2302.12095},
+  year={2023}
+}
+```
