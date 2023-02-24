@@ -4,7 +4,7 @@ Latest research in robust machine learning, including adversarial/backdoor attac
 
 Hosted projects:
 
-- ChatGPT robustness: [code](./chatgpt-robust/) | Paper: [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](xxx)
+- ChatGPT robustness: [code](./chatgpt-robust/) | Paper: [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095)
 - Stay tuned for more upcoming projects!
 
 ## Contributing
