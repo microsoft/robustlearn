@@ -100,3 +100,11 @@ The metric is F1 score.
   year={2023}
 }
 ```
+
+## Disclaimer
+
+Note that the results of some generative models might change due to the nature of generation.
+Thus, the results of this code repo could also change.
+Additionally, the results output by generative foundation models are not very clean, so you need to manually process some dirty outputs to get what you want.
+Our best suggestion to use this code is for demo and practice, since it makes it easy to get the outputs of multiple models.
+But remember, human evaluation and processing are also important.
