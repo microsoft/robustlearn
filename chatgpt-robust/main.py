@@ -3,7 +3,6 @@ from config import LABEL_SET, PROMPT_SET, LABEL_TO_ID, DATA_PATH, MODEL_SET, MOD
 from dataload import Dataset
 from inference import Inference
 import argparse
-import time
 import pandas as pd
 from tqdm import tqdm
 import numpy as np
@@ -202,9 +201,8 @@ def run(args):
         res_dict['true_label'] = label
         res_dict['pred_label'] = pred_label
         lst.append(res_dict)
-        if not args.service.__contains__('hug'):
-            time.sleep((np.random.rand() - .5) * 10 + 10)
         pd.DataFrame(lst).to_csv(args.save_file, index=False)
+        # Note that if you are using OpenAI api, you can only send 1000 requests per day.
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 # Robustness evaluation of ChatGPT
 
-This repo contains the source code in the paper [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective]().
+This repo contains the source code in the paper [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095).
 
 ![](./fig-robchat.png)
 
@@ -17,8 +17,7 @@ cd robustlearn/chatgpt-robust
 
 Then, install the following important depencencies by:
 - `pip install transformers pandas nltk jieba`
-- Install ChatGPT python API from here: https://github.com/mmabrouk/chatgpt-wrapper
-  - Note that the Python API should be run in local machine since it requires to pop up a brower to login.
+- Note that this code repo does **NOT** provide usage of ChatGPT. Optionally, you can use it from its official website (https://chat.openai.com/chat) or use the third-party library to imititate the brower activity (https://github.com/mmabrouk/chatgpt-wrapper).
 
 You can also create an conda virtual environment by running `conda env create -f environment.yml`.
 
@@ -29,8 +28,6 @@ All things can be used by running `main.py`:
 For classification tasks:
 - Use Huggingface: `python main.py --dataset advglue --task sst2 --service hug --model xxx`
 - Use GPT API: `python main.py --dataset advglue --task sst2 --service gpt --model text-davinci-003`
-- Use ChatGPT: `python main.py --dataset advglue --task sst2 --service chat`
-  - Note: ChatGPT should be used in PC, not on server
 
 For translation tasks:
 - Use Huggingface: `python main.py --dataset advglue-t --task translation_en_to_zh --service hug --model xx`
@@ -40,7 +37,7 @@ For translation tasks:
 
 Note that you will not get the final results by simply running the codes, since the outputs of generative models are not stable. We need some manual process. Bad cases of AdvGLUE and Flipkart are pvovided in [this folder](./result/chatgpt_results/).
 
-Here is the summary of the results.
+Here is the summary of the results. Additionally, we also provide all the bad cases of ChatGPT in [`result/chatgpt_results`](./result/chatgpt_results/) folder. Please note that results of all ChatGPT and other LLMs are manually processed by humans.
 
 ### Adversarial robustness for classification.
 

@@ -68,8 +68,9 @@ class Inference(object):
         elif self.service == 'gpt':
             pass
         elif self.service.__contains__('chat'):
-            from chatgpt_wrapper import ChatGPT
-            self.bot = ChatGPT()
+            pass
+            # use the library from (https://github.com/mmabrouk/chatgpt-wrapper) to generate responses from official website (https://chat.openai.com/chat).
+            
 
     def predict(self, sentence, prompt=None):
         if self.task.__contains__('translation'):
@@ -111,8 +112,8 @@ class Inference(object):
 
         elif self.service.__contains__('chat'):
             # use chatgpt models
-            response = self.bot.ask(prompt + sentence)
-            pred = self.res_to_label(response)
+            # use the library from (https://github.com/mmabrouk/chatgpt-wrapper) to generate responses from official website (https://chat.openai.com/chat).
+            pass
         return pred
 
     def predict_trans(self, sentence, prompt=None):
