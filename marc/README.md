@@ -48,7 +48,7 @@ We download Stage 1 model weights of Places and iNaturalist18 from [classifier-b
 The results could be slightly different from the results reported in the paper, since we originally used an internal repository for the experiments in the paper.
 
 
-## Cite BALMS
+## Cite MARC
 ```bibtex
 @article{wang2022margin},
   title={Margin calibration for long-tailed visual recognition},
