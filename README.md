@@ -3,7 +3,7 @@
 Latest research in robust machine learning, including adversarial/backdoor attack and defense, out-of-distribution (OOD) generalization, and safe transfer learning.
 
 Hosted projects:
-
+- MARC: [code](./marc/) | Paper [Margin Calibration for Long-Tailed Visual Recognition](https://arxiv.org/abs/2112.07225) ACML 2022
 - ChatGPT robustness: [code](./chatgpt-robust/) | Paper: [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095)
 - Stay tuned for more upcoming projects!
 
