@@ -37,6 +37,7 @@ Please follow [classifier-balancing](https://github.com/facebookresearch/classif
 ```bash
 python main.py --cfg ./config/CIFAR10_LT/softmax_100.yaml
 ```
+- MARC
 ```bash
 python main.py --cfg ./config/CIFAR10_LT/MARC_100.yaml
 ```
