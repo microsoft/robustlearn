@@ -60,7 +60,9 @@ The results could be slightly different from the results reported in the paper, 
 
 ## Contact
 Yidong Wang (yidongwang37@gmail.com)
+
 Qiang Heng (qheng@ncsu.edu) Thanks for helping reproduction!
+
 Jindong Wang (jindong.wang@micorosoft.com)
 
 ## Reference 
