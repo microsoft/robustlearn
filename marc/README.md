@@ -45,7 +45,7 @@ python main.py --cfg ./config/CIFAR10_LT/MARC_100.yaml
 ## Experiment Results
 The logs of training can be found at [logs link](https://1drv.ms/u/s!At10qerm7Tcdg25ROuGeKE644w81?e=J5fgfg).
 We download Stage 1 model weights of Places and iNaturalist18 from [classifier-balancing](https://github.com/facebookresearch/classifier-balancing) for quick reproduction.
-The results could be slightly different from the results reported in the paper, since we originally used an internal repository for the experiments in the paper.
+The results could be slightly different from the results reported in the paper (most results of this repo are better than those in the paper), since we originally used an internal repository for the experiments in the paper.
 
 
 ## Cite MARC
