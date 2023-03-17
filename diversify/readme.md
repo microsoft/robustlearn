@@ -37,13 +37,21 @@ After downloading the dataset, you can run the code in trainself_tb.py.
 
 We provide the commands for four tasks in EMG.
 
-`python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 0 --dataset emg --algorithm TDBself --latent_domain_num 5 --alpha1 0.1 --alpha 0.1 --lam 0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-0-5-0.1-0.1-0-3-50-0.01`
+```
+python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 0 --dataset emg --algorithm TDBself --latent_domain_num 5 --alpha1 0.1 --alpha 0.1 --lam 0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-0-5-0.1-0.1-0-3-50-0.01
+```
 
-`python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 1 --dataset emg --algorithm TDBself --latent_domain_num 10 --alpha1 0.5 --alpha 10 --lam 0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-1-10-0.5-10-0-5-30-0.01`
+```
+python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 1 --dataset emg --algorithm TDBself --latent_domain_num 10 --alpha1 0.5 --alpha 10 --lam 0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-1-10-0.5-10-0-5-30-0.01
+```
 
-`python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 2 --dataset emg --algorithm TDBself --latent_domain_num 2 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-2-2-1-1-0-10-15-0.01`
+```
+python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 2 --dataset emg --algorithm TDBself --latent_domain_num 2 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-2-2-1-1-0-10-15-0.01
+```
 
-`python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 3 --dataset emg --algorithm TDBself --latent_domain_num 3 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-3-3-1-1-0-10-15-0.01`
+```
+python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 3 --dataset emg --algorithm TDBself --latent_domain_num 3 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-3-3-1-1-0-10-15-0.01
+```
 
 # Results
 
