@@ -82,7 +82,7 @@ isodate==0.6.0
 jedi==0.17.2
 jeepney==0.6.0
 jmespath==0.10.0
-joblib==0.17.0
+joblib==1.2.0
 jsonpatch==1.27
 jsonpickle==1.4.1
 jsonpointer==2.0
