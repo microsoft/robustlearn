@@ -112,7 +112,7 @@ pathspec==0.8.1
 pathtools==0.1.2
 pexpect==4.8.0
 pickleshare==0.7.5
-pillow==8.3.2
+pillow==9.3.0
 pip==19.3.1
 portalocker==1.7.1
 pot==0.7.0
