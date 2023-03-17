@@ -3,11 +3,11 @@
 Latest research in robust machine learning, including adversarial/backdoor attack and defense, out-of-distribution (OOD) generalization, and safe transfer learning.
 
 Hosted projects:
-- **Diversify** (ICLR 2023):
+- **Diversify** (ICLR 2023, #OOD):
   - [Code](./diversify/) | [Out-of-distribution Representation Learning for Time Series Classification](https://arxiv.org/abs/2209.07027)
-- **MARC** (ACML 2022): 
+- **MARC** (ACML 2022, #Long-tail): 
   - [Code](./marc/) | [Margin Calibration for Long-Tailed Visual Recognition](https://arxiv.org/abs/2112.07225)
-- **ChatGPT robustness** (arXiv 2023): 
+- **ChatGPT robustness** (arXiv 2023, #OOD #Adversarial): 
   - [Code](./chatgpt-robust/) | [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095)
 - Stay tuned for more upcoming projects!
 
