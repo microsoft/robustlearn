@@ -180,7 +180,7 @@ wandb==0.13.10
 wcwidth==0.2.5
 websocket-client==0.57.0
 werkzeug==1.0.1
-wheel==0.33.6
+wheel==0.38.1
 wilds==1.2.2
 wrapt==1.15.0
 zipp==3.4.0
