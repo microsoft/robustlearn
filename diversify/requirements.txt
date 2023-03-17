@@ -48,7 +48,7 @@ colorama==0.4.4
 conda-package-handling==1.6.0
 conda==4.7.12
 contextlib2==0.6.0.post1
-cryptography==2.8
+cryptography==39.0.1
 cvxopt==1.2.7
 cvxpy==1.1.17
 cycler==0.10.0
