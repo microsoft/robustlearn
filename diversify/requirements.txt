@@ -127,7 +127,7 @@ pyasn1==0.4.8
 pycosat==0.6.3
 pycparser==2.19
 pygments==2.7.2
-pyjwt==1.7.1
+pyjwt==2.4.0
 pyopenssl==19.0.0
 pyparsing==2.4.7
 pysocks==1.7.1
