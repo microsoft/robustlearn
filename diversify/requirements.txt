@@ -37,7 +37,7 @@ backpack==0.1
 backports.tempfile==1.0
 backports.weakref==1.0.post1
 cachetools==4.1.1
-certifi==2019.9.11
+certifi==2022.12.7
 cffi==1.13.0
 chardet==3.0.4
 charset-normalizer==3.0.1
