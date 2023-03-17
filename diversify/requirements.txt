@@ -118,7 +118,7 @@ portalocker==1.7.1
 pot==0.7.0
 pretty-errors==1.2.19
 prompt-toolkit==3.0.8
-protobuf==3.14.0
+protobuf==3.18.3
 psutil==5.9.4
 ptyprocess==0.6.0
 pyarrow==1.0.1
