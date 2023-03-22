@@ -50,7 +50,7 @@ The results could be slightly different from the results reported in the paper (
 
 ## Cite MARC
 ```bibtex
-@article{wang2022margin},
+@article{wang2022margin,
   title={Margin calibration for long-tailed visual recognition},
   author={Wang, Yidong and Zhang, Bowen and Hou, Wenxin and Wu, Zhen and Wang, Jindong and Shinozaki, Takahiro},
   booktitle={Asian Conference on Machine Learning (ACML)},
