@@ -29,7 +29,7 @@ The bracelet is equipped with eight sensors equally spaced around the forearm th
 Data of 36 subjects are collected while they performed series of static hand gestures and the number of instances is 40, 000 − 50, 000 recordings in each column. 
 It contains 7 classes and we select 6 common classes for our experiments. 
 We randomly divide 36 subjects into four domains (i.e., 0, 1, 2, 3) without overlapping and each domain contains data of 9 persons.
-The processed EMG dataset can be downloaded at [dataset link](https://jindwangstorage.blob.core.windows.net/amulet/lwdata/act/emg/). 
+The processed EMG dataset can be downloaded at [dataset link](https://wjdcloud.blob.core.windows.net/dataset/diversity_emg.zip). 
 
 ## How to run
 
