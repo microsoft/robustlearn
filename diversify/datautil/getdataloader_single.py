@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # coding=utf-8
 import numpy as np
 from torch.utils.data import DataLoader

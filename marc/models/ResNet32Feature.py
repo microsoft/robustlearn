@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 """
 Properly implemented ResNet-s for CIFAR10 as described in paper [1].
 The implementation and structure of this file is hugely influenced by [2]

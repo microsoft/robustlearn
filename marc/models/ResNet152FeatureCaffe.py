@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 """Copyright (c) Facebook, Inc. and its affiliates.
 All rights reserved.
 

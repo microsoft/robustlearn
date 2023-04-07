@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 from PIL import Image, ImageEnhance, ImageOps
 import numpy as np
 import random

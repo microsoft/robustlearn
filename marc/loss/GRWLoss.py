@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 import torch
 from torch.nn import functional as F
 from torch.nn.modules.loss import _WeightedLoss

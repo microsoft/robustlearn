@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 LABEL_SET = {
     'sst2': ['positive', 'negative'],
     'mnli': ['entailment', 'neutral', 'contradiction'],

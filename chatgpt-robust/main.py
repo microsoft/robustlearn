@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
 
 from config import LABEL_SET, PROMPT_SET, LABEL_TO_ID, DATA_PATH, MODEL_SET, MODEL_SET_TRANS
 from dataload import Dataset

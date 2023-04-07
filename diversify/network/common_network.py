@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # coding=utf-8
 import torch.nn as nn
 import torch.nn.utils.weight_norm as weightNorm

@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 """
 Adopted from https://github.com/KaihuaTang/Long-Tailed-Recognition.pytorch
 """

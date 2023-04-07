@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 from config import LABEL_SET, PROMPT_SET, OPENAI_KEYS
 import json
 import pandas as pd

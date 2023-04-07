@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # coding=utf-8
 from torchvision import transforms
 import numpy as np
