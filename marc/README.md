@@ -30,7 +30,9 @@ class MARCLinear(nn.Module):
 
 ## Data preparation
 
-Please follow [classifier-balancing](https://github.com/facebookresearch/classifier-balancing)
+Please follow [classifier-balancing](https://github.com/facebookresearch/classifier-balancing).
+
+Then, you need to download all the preprocessed data indexs for each dataset by: `wget https://github.com/microsoft/robustlearn.git`. Then, unzip this file and move the unziped folders under `./data` folder.
 
 ## Example of Training
 - Base model (Representation Learning)
