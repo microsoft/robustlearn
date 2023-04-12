@@ -1,18 +1,14 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-# coding=utf-8
-
 import time
-
 from alg.opt import *
 from alg import alg, modelopera
 from utils.util import set_random_seed, get_args, print_row, print_args, train_valid_target_eval_names, alg_loss_dict, print_environ
 from datautil.getdataloader_single import get_act_dataloader
 
-if __name__ == '__main__':
-    args = get_args()
 
+def main(args):
     s = print_args(args, [])
     set_random_seed(args.seed)
 
@@ -23,7 +19,7 @@ if __name__ == '__main__':
     else:
         args.batch_size = 16*args.latent_domain_num
 
-    train_loader, train_loader_noshuffle, valid_loader, target_loader, traindata, validdata, testdata = get_act_dataloader(
+    train_loader, train_loader_noshuffle, valid_loader, target_loader, _, _, _ = get_act_dataloader(
         args)
 
     best_valid_acc, target_acc = 0, 0
@@ -31,13 +27,13 @@ if __name__ == '__main__':
     algorithm_class = alg.get_algorithm_class(args.algorithm)
     algorithm = algorithm_class(args).cuda()
     algorithm.train()
-    optd = get_optimizer(algorithm, args, nettype='TDBADV')
-    opt = get_optimizer(algorithm, args, nettype='TDBCLS')
-    opta = get_optimizer(algorithm, args, nettype='TDBALL')
+    optd = get_optimizer(algorithm, args, nettype='Diversify-adv')
+    opt = get_optimizer(algorithm, args, nettype='Diversify-cls')
+    opta = get_optimizer(algorithm, args, nettype='Diversify-all')
 
     for round in range(args.max_epoch):
-        print('====round %d=====' % round)
-        print('====start obtain all features====')
+        print(f'\n========ROUND {round}========')
+        print('====Feature update====')
         loss_list = ['class']
         print_row(['epoch']+[item+'_loss' for item in loss_list], colwidth=15)
 
@@ -47,7 +43,7 @@ if __name__ == '__main__':
             print_row([step]+[loss_result_dict[item]
                               for item in loss_list], colwidth=15)
 
-        print('====start domain splitting training====')
+        print('====Latent domain characterization====')
         loss_list = ['total', 'dis', 'ent']
         print_row(['epoch']+[item+'_loss' for item in loss_list], colwidth=15)
 
@@ -59,7 +55,7 @@ if __name__ == '__main__':
 
         algorithm.set_dlabel(train_loader)
 
-        print('====start DANN class training====')
+        print('====Domain-invariant feature learning====')
 
         loss_list = alg_loss_dict(args)
         eval_dict = train_valid_target_eval_names(args)
@@ -69,10 +65,8 @@ if __name__ == '__main__':
         print_key.append('total_cost_time')
         print_row(print_key, colwidth=15)
 
-        last_results_keys = None
         sss = time.time()
         for step in range(args.local_epoch):
-            step_start_time = time.time()
             for data in train_loader:
                 step_vals = algorithm.update(data, opt)
 
@@ -97,4 +91,9 @@ if __name__ == '__main__':
             results['total_cost_time'] = time.time()-sss
             print_row([results[key] for key in print_key], colwidth=15)
 
-    print('target acc:%.4f' % target_acc)
+    print(f'Target acc: {target_acc:.4f}')
+
+
+if __name__ == '__main__':
+    args = get_args()
+    main(args)

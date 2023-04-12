@@ -1,6 +1,6 @@
 # DIVERSIFY: OUT-OF-DISTRIBUTION REPRESENTATION LEARNING FOR TIME SERIES CLASSIFICATION
 
-This project implements our paper [OUT-OF-DISTRIBUTION REPRESENTATION LEARNING FOR TIME SERIES CLASSIFICATION](https://openreview.net/pdf?id=gUZWOE42l6Q) at ICLR 2023. Please refer to our paper [1] for the method and technical details. [Zhihu](https://zhuanlan.zhihu.com/)
+This project implements our paper [OUT-OF-DISTRIBUTION REPRESENTATION LEARNING FOR TIME SERIES CLASSIFICATION](https://openreview.net/pdf?id=gUZWOE42l6Q) at ICLR 2023. Please refer to our paper [1] for the method and technical details. [[Zhihu blog](https://zhuanlan.zhihu.com/p/614873150)]
 
 ![](https://picx.zhimg.com/80/v2-4e542ec1a804a22d087bbb4160ef9d13_1440w.png?source=d16d100b)
 
@@ -21,7 +21,7 @@ It is better to use the same environment following [https://hub.docker.com/r/luw
 
 ## Dataset 
 
-The original EMG dataset can be downloadd from [
+The original EMG dataset can be downloaded from [
 EMG data for gestures Data Set](https://archive.ics.uci.edu/ml/datasets/EMG+data+for+gestures).
 Electromyography (EMG) is a typical time-series data that is based on bioelectric signals. 
 The dataset contains raw EMG data recorded by MYO Thalmic bracelet. 
@@ -29,36 +29,38 @@ The bracelet is equipped with eight sensors equally spaced around the forearm th
 Data of 36 subjects are collected while they performed series of static hand gestures and the number of instances is 40, 000 − 50, 000 recordings in each column. 
 It contains 7 classes and we select 6 common classes for our experiments. 
 We randomly divide 36 subjects into four domains (i.e., 0, 1, 2, 3) without overlapping and each domain contains data of 9 persons.
-The processed EMG dataset can be downloaded at [dataset link](https://wjdcloud.blob.core.windows.net/dataset/diversity_emg.zip). 
+The processed EMG dataset can be downloaded at [dataset link](https://wjdcloud.blob.core.windows.net/dataset/diversity_emg.zip).
+
+After downloading the dataset, you need to unzip it and put it under `./data` folder.
 
 ## How to run
-
-After downloading the dataset, you can run the code in trainself_tb.py. 
 
 We provide the commands for four tasks in EMG.
 
 ```
-python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 0 --dataset emg --algorithm TDBself --latent_domain_num 5 --alpha1 0.1 --alpha 0.1 --lam 0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-0-5-0.1-0.1-0-3-50-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 0 --dataset emg --algorithm diversify --latent_domain_num 5 --alpha1 0.1 --alpha 0.1 --lam 0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-0-5-0.1-0.1-0-3-50-0.01
 ```
 
 ```
-python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 1 --dataset emg --algorithm TDBself --latent_domain_num 10 --alpha1 0.5 --alpha 10 --lam 0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-1-10-0.5-10-0-5-30-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 1 --dataset emg --algorithm diversify --latent_domain_num 10 --alpha1 0.5 --alpha 10 --lam 0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-1-10-0.5-10-0-5-30-0.01
 ```
 
 ```
-python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 2 --dataset emg --algorithm TDBself --latent_domain_num 2 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-2-2-1-1-0-10-15-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 2 --dataset emg --algorithm diversify --latent_domain_num 2 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-2-2-1-1-0-10-15-0.01
 ```
 
 ```
-python trainself_tb.py --data_dir ./data/act/ --task cross_people --test_envs 3 --dataset emg --algorithm TDBself --latent_domain_num 3 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-TDBself-3-3-1-1-0-10-15-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 3 --dataset emg --algorithm diversify --latent_domain_num 3 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-3-3-1-1-0-10-15-0.01
 ```
 
-# Results
+## Results
 
 **EMG dataset**
 
 Please note that we report better results here compared to the results in the original paper.
 We choose the best models of the last round in the original paper while we choose the globally best models here. 
+
+Note: we open-sourced all the training logs on [wandb](https://wandb.ai/luw12thu/diversify).
 
 | Target    | 0         | 1         | 2         | 3         | AVG       |
 |-----------|-----------|-----------|-----------|-----------|-----------|
@@ -73,13 +75,17 @@ We choose the best models of the last round in the original paper while we choos
 | DIVERSIFY | **74.1** | **88.3** | **79.7** | **80.0** | **80.5** |
 
 
-# Contact
+## Extensions
+
+This algorithm is closely related to [domain generalization](https://dgresearch.github.io/) and you can find more codes for domain generalization in this repo: [[DeepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG)].
+
+## Contact
 
 - luwang@ict.ac.cn
 - jindongwang@outlook.com
 
 
-# References
+## References
 
 ```
 @inproceedings{lu2022out,

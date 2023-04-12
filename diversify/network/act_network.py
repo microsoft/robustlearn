@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-# coding=utf-8
+
 import torch.nn as nn
 
 var_size = {

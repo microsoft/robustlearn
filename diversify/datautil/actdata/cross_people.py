@@ -1,8 +1,6 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-# coding=utf-8
-
 from datautil.actdata.util import *
 from datautil.util import mydataset, Nmax
 import numpy as np

@@ -1,14 +1,16 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-#coding=utf-8
 
-from alg.algs.TDBself import TDBself
+from .algs.diversify import Diversify
+
 ALGORITHMS = [
-    'TDBself'
+    'diversify'
 ]
 
+
 def get_algorithm_class(algorithm_name):
-    if algorithm_name not in globals():
-        raise NotImplementedError("Algorithm not found: {}".format(algorithm_name))
-    return globals()[algorithm_name]
+    if algorithm_name not in ALGORITHMS:
+        raise NotImplementedError(
+            "Algorithm not found: {}".format(algorithm_name))
+    return Diversify

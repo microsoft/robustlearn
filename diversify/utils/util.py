@@ -1,7 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-# coding=utf-8
+
 import random
 import numpy as np
 import torch
@@ -33,7 +33,7 @@ def train_valid_target_eval_names(args):
 
 
 def alg_loss_dict(args):
-    loss_dict = {'TDBself': ['class', 'dis', 'total']}
+    loss_dict = {'diversify': ['class', 'dis', 'total']}
     return loss_dict[args.algorithm]
 
 
@@ -101,7 +101,7 @@ def act_param_init(args):
 
 def get_args():
     parser = argparse.ArgumentParser(description='DG')
-    parser.add_argument('--algorithm', type=str, default="TDBself")
+    parser.add_argument('--algorithm', type=str, default="diversify")
     parser.add_argument('--alpha', type=float,
                         default=0.1, help="DANN dis alpha")
     parser.add_argument('--alpha1', type=float,
