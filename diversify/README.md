@@ -10,13 +10,14 @@ This project implements our paper [OUT-OF-DISTRIBUTION REPRESENTATION LEARNING F
 
 ## Requirement
 
-- CUDA 10.2 
-- Python 3.7.4
-- Pytorch == 1.7.1
-- Torchvision == 0.8.2
+- Pytorch >= 1.13.1
+- Torchvision
 
-The required packages are listed in `requirements.txt`. 
-It is better to use the same environment following [https://hub.docker.com/r/luwang0517/torch10](https://hub.docker.com/r/luwang0517/torch10).
+The required packages are listed in `requirements.txt`:
+
+```
+pip install -r requirements.txt
+```
 
 
 ## Dataset 
@@ -29,28 +30,31 @@ The bracelet is equipped with eight sensors equally spaced around the forearm th
 Data of 36 subjects are collected while they performed series of static hand gestures and the number of instances is 40, 000 − 50, 000 recordings in each column. 
 It contains 7 classes and we select 6 common classes for our experiments. 
 We randomly divide 36 subjects into four domains (i.e., 0, 1, 2, 3) without overlapping and each domain contains data of 9 persons.
-The processed EMG dataset can be downloaded at [dataset link](https://wjdcloud.blob.core.windows.net/dataset/diversity_emg.zip).
+The processed EMG dataset can be downloaded at [dataset link](https://wjdcloud.blob.core.windows.net/dataset/diversity_emg.zip):
 
-After downloading the dataset, you need to unzip it and put it under `./data` folder.
+```
+wget https://wjdcloud.blob.core.windows.net/dataset/diversity_emg.zip
+unzip diversity_emg.zip && mv emg data/
+```
 
 ## How to run
 
-We provide the commands for four tasks in EMG.
+We provide the commands for four tasks in EMG to reproduce the results of Pytorch 1.13.1.
 
 ```
-python train.py --data_dir ./data/ --task cross_people --test_envs 0 --dataset emg --algorithm diversify --latent_domain_num 5 --alpha1 0.1 --alpha 0.1 --lam 0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-0-5-0.1-0.1-0-3-50-0.01
-```
-
-```
-python train.py --data_dir ./data/ --task cross_people --test_envs 1 --dataset emg --algorithm diversify --latent_domain_num 10 --alpha1 0.5 --alpha 10 --lam 0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-1-10-0.5-10-0-5-30-0.01
+python traintest.py --data_dir ./data/ --task cross_people --test_envs 0 --dataset emg --algorithm Diversify --latent_domain_num 10 --alpha1 1.0 --alpha 1.0 --lam 0.0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-0-10-1-1-0-3-50-0.01
 ```
 
 ```
-python train.py --data_dir ./data/ --task cross_people --test_envs 2 --dataset emg --algorithm diversify --latent_domain_num 2 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-2-2-1-1-0-10-15-0.01
+python traintest.py --data_dir ./data/ --task cross_people --test_envs 1 --dataset emg --algorithm Diversify --latent_domain_num 2 --alpha1 0.1 --alpha 10.0 --lam 0.0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-1-2-0.1-10-0-10-15-0.01
 ```
 
 ```
-python train.py --data_dir ./data/ --task cross_people --test_envs 3 --dataset emg --algorithm diversify --latent_domain_num 3 --alpha1 1 --alpha 1 --lam 0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/emg/cross_people-emg-diversify-3-3-1-1-0-10-15-0.01
+python traintest.py --data_dir ./data/ --task cross_people --test_envs 2 --dataset emg --algorithm Diversify --latent_domain_num 20 --alpha1 0.5 --alpha 1.0 --lam 0.0 --local_epoch 1 --max_epoch 150 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-2-20-0.5-1-0-1-150-0.01
+```
+
+```
+python traintest.py --data_dir ./data/ --task cross_people --test_envs 3 --dataset emg --algorithm Diversify --latent_domain_num 5 --alpha1 5.0 --alpha 0.1 --lam 0.0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-3-5-5-0.1-0-5-30-0.01
 ```
 
 ## Results
@@ -72,7 +76,10 @@ Note: we open-sourced all the training logs on [wandb](https://wandb.ai/luw12thu
 | RSC       | 70.1      | 74.6      | 72.4      | 71.9      | 72.2      |
 | ANDMask   | 66.5      | 69.1      | 71.4      | 68.9      | 69.0      |
 | AdaRNN    | 68.8      | 81.1      | 75.3      | 78.1      | 75.8      |
-| DIVERSIFY | **74.1** | **88.3** | **79.7** | **80.0** | **80.5** |
+| DIVERSIFY (Table 1 in paper, Pytorch=1.7.1) | **71.7** | **82.4** | **76.9** | **77.3** | **77.1** |
+| DIVERSIFY (This code, Pytorch=1.13.1) | **73.1** | **86.8** | **80.4** | **81.6** | **80.5** |
+
+**Statement:** This work was completed in Sep. 2021 and then submitted to ICLR 2022. Yet it was rejected even if the scores are [866](https://openreview.net/forum?id=NX0nX7TE4lc). So the main results in the paper are obtained using Pytorch 1.7.1. By the time of this year (2023), Pytorch 1.7.1 is too obsolete for most machines and may not be reproducible. So, we rerun the code using Pytorch 1.13.1 for better reproducibility. Thus, the results using different Pytorch versions may vary. To show our initial logs in the paper for integraty and reproducibility, interested readers can refer to this [wandb](https://wandb.ai/luw12thu/diversify) to see our training logs. Note that the new results using Pytorch 1.13.1 are even better than those in the paper, haha. If you want to use Pytorch 1.7.1, you can refer to this [docker](https://hub.docker.com/r/luwang0517/torch10).
 
 
 ## Extensions
