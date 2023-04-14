@@ -10,13 +10,16 @@ This project implements our paper [OUT-OF-DISTRIBUTION REPRESENTATION LEARNING F
 
 ## Requirement
 
-- Pytorch >= 1.13.1
-- Torchvision
-
-The required packages are listed in `requirements.txt`:
+The required packages are listed in `requirements.txt` for minimum requirement (Python 3.10.9):
 
 ```
 pip install -r requirements.txt
+```
+
+If you want to create a new Conda environment, you can also run the following:
+
+```
+conda env create -f env.yml
 ```
 
 
