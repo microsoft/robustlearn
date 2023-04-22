@@ -45,19 +45,19 @@ unzip diversity_emg.zip && mv emg data/
 We provide the commands for four tasks in EMG to reproduce the results of Pytorch 1.13.1.
 
 ```
-python traintest.py --data_dir ./data/ --task cross_people --test_envs 0 --dataset emg --algorithm Diversify --latent_domain_num 10 --alpha1 1.0 --alpha 1.0 --lam 0.0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-0-10-1-1-0-3-50-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 0 --dataset emg --algorithm Diversify --latent_domain_num 10 --alpha1 1.0 --alpha 1.0 --lam 0.0 --local_epoch 3 --max_epoch 50 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-0-10-1-1-0-3-50-0.01
 ```
 
 ```
-python traintest.py --data_dir ./data/ --task cross_people --test_envs 1 --dataset emg --algorithm Diversify --latent_domain_num 2 --alpha1 0.1 --alpha 10.0 --lam 0.0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-1-2-0.1-10-0-10-15-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 1 --dataset emg --algorithm Diversify --latent_domain_num 2 --alpha1 0.1 --alpha 10.0 --lam 0.0 --local_epoch 10 --max_epoch 15 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-1-2-0.1-10-0-10-15-0.01
 ```
 
 ```
-python traintest.py --data_dir ./data/ --task cross_people --test_envs 2 --dataset emg --algorithm Diversify --latent_domain_num 20 --alpha1 0.5 --alpha 1.0 --lam 0.0 --local_epoch 1 --max_epoch 150 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-2-20-0.5-1-0-1-150-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 2 --dataset emg --algorithm Diversify --latent_domain_num 20 --alpha1 0.5 --alpha 1.0 --lam 0.0 --local_epoch 1 --max_epoch 150 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-2-20-0.5-1-0-1-150-0.01
 ```
 
 ```
-python traintest.py --data_dir ./data/ --task cross_people --test_envs 3 --dataset emg --algorithm Diversify --latent_domain_num 5 --alpha1 5.0 --alpha 0.1 --lam 0.0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-3-5-5-0.1-0-5-30-0.01
+python train.py --data_dir ./data/ --task cross_people --test_envs 3 --dataset emg --algorithm Diversify --latent_domain_num 5 --alpha1 5.0 --alpha 0.1 --lam 0.0 --local_epoch 5 --max_epoch 30 --lr 0.01 --output ./data/train_output/act/cross_people-emg-Diversify-3-5-5-0.1-0-5-30-0.01
 ```
 
 ## Results
