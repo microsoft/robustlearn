@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/microsoft/robustlearn">
-    <img src="https://wjdcloud.blob.core.windows.net/tools/04-23-2023-04-47-52-a.jpg" alt="Logo" width="400">
+    <img src="https://wjdcloud.blob.core.windows.net/tools/roblearn.png" alt="Logo" width="400">
   </a>
 
   <strong>robustlearn</strong>: A unified library for research on robust machine learning
