@@ -1,4 +1,22 @@
-# robustlearn
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+<!-- 
+***[![MIT License][license-shield]][license-url]
+-->
+
+<!-- PROJECT LOGO -->
+
+<br />
+<div align="center">
+  <a href="https://github.com/microsoft/robustlearn">
+    <img src="https://wjdcloud.blob.core.windows.net/tools/04-23-2023-04-47-52-a.jpg" alt="Logo" width="400">
+  </a>
+
+  <strong>robustlearn</strong>: A unified library for research on robust machine learning
+
+</div>
 
 Latest research in robust machine learning, including adversarial/backdoor attack and defense, out-of-distribution (OOD) generalization, and safe transfer learning.
 
@@ -12,6 +30,12 @@ Hosted projects:
 - Stay tuned for more upcoming projects!
 
 You can clone or download this repo. Then, go to the project folder that you are interested to run and develop your research.
+
+Related repos:
+  - Transfer learning: [[transferlearning: everything for transfer, domain adaptation, and more](https://github.com/jindongwang/transferlearning)]
+  - Semi-supervised learning: [[USB: unified semi-supervised learning benchmark](https://github.com/microsoft/Semi-supervised-learning)] | [[TorchSSL: a unified SSL library](https://github.com/TorchSSL/TorchSSL)] 
+  - Federated learning: [[PersonalizedFL: library for personalized federated learning](https://github.com/microsoft/PersonalizedFL)]
+
 
 ## Contributing
 
@@ -34,3 +58,15 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/microsoft/robustlearn.svg?style=for-the-badge
+[contributors-url]: https://github.com/microsoft/robustlearn/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/microsoft/robustlearn.svg?style=for-the-badge
+[forks-url]: https://github.com/microsoft/robustlearn/network/members
+[stars-shield]: https://img.shields.io/github/stars/microsoft/robustlearn.svg?style=for-the-badge
+[stars-url]: https://github.com/microsoft/robustlearn/stargazers
+[issues-shield]: https://img.shields.io/github/issues/microsoft/robustlearn.svg?style=for-the-badge
+[issues-url]: https://github.com/microsoft/robustlearn/issues
+[license-shield]: https://img.shields.io/github/license/microsoft/robustlearn.svg?style=for-the-badge
+[license-url]: https://github.com/microsoft/robustlearn/blob/main/LICENSE.txt
