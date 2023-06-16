@@ -34,6 +34,7 @@ You can clone or download this repo. Then, go to the project folder that you are
 Related repos:
   - Transfer learning: [[transferlearning: everything for transfer, domain adaptation, and more](https://github.com/jindongwang/transferlearning)]
   - Semi-supervised learning: [[USB: unified semi-supervised learning benchmark](https://github.com/microsoft/Semi-supervised-learning)] | [[TorchSSL: a unified SSL library](https://github.com/TorchSSL/TorchSSL)] 
+  - Prompt benchmark: [[PromptBench: adverarial robustness of prompts of LLMs](https://github.com/microsoft/promptbench)]
   - Federated learning: [[PersonalizedFL: library for personalized federated learning](https://github.com/microsoft/PersonalizedFL)]
 
 
