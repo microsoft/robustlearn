@@ -23,6 +23,8 @@ Latest research in robust machine learning, including adversarial/backdoor attac
 Hosted projects:
 - **Diversify** (ICLR 2023, #OOD):
   - [Code](./diversify/) | [Out-of-distribution Representation Learning for Time Series Classification](https://arxiv.org/abs/2209.07027)
+- **DRM** (KDD 2023, #OOD):
+  - [Code](./drm/) | [Domain-Specific Risk Minimization for Out-of-Distribution Generalization](https://arxiv.org/abs/2208.08661)
 - **MARC** (ACML 2022, #Long-tail): 
   - [Code](./marc/) | [Margin Calibration for Long-Tailed Visual Recognition](https://arxiv.org/abs/2112.07225)
 - **ChatGPT robustness** (arXiv 2023, #OOD #Adversarial): 
@@ -34,7 +36,8 @@ You can clone or download this repo. Then, go to the project folder that you are
 Related repos:
   - Transfer learning: [[transferlearning: everything for transfer, domain adaptation, and more](https://github.com/jindongwang/transferlearning)]
   - Semi-supervised learning: [[USB: unified semi-supervised learning benchmark](https://github.com/microsoft/Semi-supervised-learning)] | [[TorchSSL: a unified SSL library](https://github.com/TorchSSL/TorchSSL)] 
-  - Prompt benchmark: [[PromptBench: adverarial robustness of prompts of LLMs](https://github.com/microsoft/promptbench)]
+  - Prompt benchmark for large language models: [[PromptBench: adverarial robustness of prompts of LLMs](https://github.com/microsoft/promptbench)]
+  - Evlauation of large language models: [[LLM-eval](https://llm-eval.github.io/)]
   - Federated learning: [[PersonalizedFL: library for personalized federated learning](https://github.com/microsoft/PersonalizedFL)]
 
 
