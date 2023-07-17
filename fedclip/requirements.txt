@@ -1,5 +1,5 @@
 clip==1.0
-numpy==1.19.2
+numpy==1.22.0
 opencv-python==4.5.4.60
 openpyxl==3.0.5
 Pillow==8.0.1
