@@ -188,7 +188,7 @@ msrestazure==0.6.4
 multipledispatch==0.6.0
 navigator-updater==0.2.1
 nbclient==0.5.1
-nbconvert==6.0.7
+nbconvert==6.5.1
 nbformat==5.0.8
 ndg-httpsclient==0.5.1
 nest-asyncio==1.4.2
