@@ -148,7 +148,7 @@ jeepney==0.5.0
 jieba==0.42.1
 Jinja2==2.11.2
 jmespath==0.10.0
-joblib==0.17.0
+joblib==1.2.0
 json5==0.9.5
 jsonpickle==2.0.0
 jsonschema==3.2.0
