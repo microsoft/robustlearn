@@ -347,7 +347,7 @@ wcwidth==0.2.5
 webencodings==0.5.1
 websocket-client==1.2.3
 Werkzeug==1.0.1
-wheel==0.35.1
+wheel==0.38.1
 widgetsnbextension==3.5.1
 wilds==2.0.0
 wrapt==1.11.2
