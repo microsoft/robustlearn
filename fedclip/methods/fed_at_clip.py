@@ -1,20 +1,21 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from nets.models import ClipModelat
+import argparse
+import copy
+from utils.prepare_data_dg_clip import *
+import utils.clip_util as clu
+from utils.config import img_param_init, set_random_seed
 import sys
 import os
 base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(base_path)
-from utils.config import img_param_init, set_random_seed
-import utils.clip_util as clu
-from utils.prepare_data_dg_clip import *
-import copy
-import argparse
-from nets.models import ClipModelat
-import torch.optim as optim
-import torch.nn as nn
-import torch
-import numpy as np
+
 
 def toeval(model):
     model.model.eval()

@@ -27,9 +27,9 @@ Hosted projects:
   - [Code](./drm/) | [Domain-Specific Risk Minimization for Out-of-Distribution Generalization](https://arxiv.org/abs/2208.08661)
 - **MARC** (ACML 2022, #Long-tail): 
   - [Code](./marc/) | [Margin Calibration for Long-Tailed Visual Recognition](https://arxiv.org/abs/2112.07225)
-- **FedCLIP** (IEEE Data Engineering Bulletin 2023): 
+- **FedCLIP** (IEEE Data Engineering Bulletin 2023, #OOD #LargeModel): 
   - [Code](./fedclip/) | [FedCLIP: Fast Generalization and Personalization for CLIP in Federated Learning](https://arxiv.org/abs/2302.13485)
-- **ChatGPT robustness** (arXiv 2023, #OOD #Adversarial): 
+- **ChatGPT robustness** (arXiv 2023, #OOD #Adversarial #LargeModel): 
   - [Code](./chatgpt-robust/) | [On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095)
 - Stay tuned for more upcoming projects!
 
