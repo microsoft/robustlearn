@@ -2,7 +2,7 @@ clip==1.0
 numpy==1.19.2
 opencv-python==4.5.4.60
 openpyxl==3.0.5
-Pillow==8.0.1
+Pillow==9.3.0
 scikit-image==0.17.2
 scikit-learn==0.23.2
 scipy==1.7.3
