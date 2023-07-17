@@ -123,7 +123,7 @@ gmpy2==2.0.8
 google-auth==2.11.1
 google-auth-oauthlib==0.4.6
 greenlet==0.4.17
-grpcio==1.49.1
+grpcio==1.53.0
 h5py==2.10.0
 HeapDict==1.0.1
 html5lib==1.1
