@@ -105,7 +105,7 @@ et-xmlfile==1.0.1
 fastcache==1.1.0
 filelock==3.0.12
 flake8==3.8.4
-Flask==1.1.2
+Flask==2.2.5
 Flask-Cors==3.0.10
 Flask-Executor==0.10.0
 Flask-FontAwesome==0.1.5
