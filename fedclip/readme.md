@@ -12,7 +12,10 @@ This project implements our paper [FedCLIP: Fast Generalization and Personalizat
 The required packages are listed in `requirements.txt` for minimum requirement (Python 3.8.5):
 
 ```
-pip install -r requirements.txt
+$ pip install ftfy regex tqdm
+$ pip install git+https://github.com/openai/CLIP.git
+$ pip install -r requirements.txt
+$ pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
 ```
 
 ## Dataset 

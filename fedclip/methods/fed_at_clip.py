@@ -124,6 +124,7 @@ if __name__ == '__main__':
     parser.add_argument('--datapercent', type=float,
                         default=6e-1, help='data percent to use')
     parser.add_argument('--batch', type=int, default=32, help='batch size')
+    parser.add_argument('--root_dir', type=str, default='../../../data/')
     parser.add_argument('--iters', type=int, default=300,
                         help='iterations for communication')
     parser.add_argument('--wk_iters', type=int, default=1,

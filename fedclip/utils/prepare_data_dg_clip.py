@@ -70,7 +70,7 @@ def getfeadataloader(args, model):
     for i, item in enumerate(args.domains):
         if i in args.test_envs:
             data = ImageTextData(
-                item, '../data/'+args.dataset+'/', model.preprocess)
+                item, args.root_dir+args.dataset+'/', model.preprocess)
             model.setselflabel(data.labels)
             ted.append(torch.utils.data.DataLoader(
                 data, batch_size=args.batch, shuffle=False))
@@ -78,7 +78,7 @@ def getfeadataloader(args, model):
             vad.append(0)
         else:
             data = ImageTextData(
-                item, '../data/'+args.dataset+'/', model.preprocess)
+                item, args.root_dir+args.dataset+'/', model.preprocess)
             l = len(data)
             index = np.arange(l)
             np.random.seed(args.seed)
