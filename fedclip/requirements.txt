@@ -91,7 +91,7 @@ dask==2.30.0
 decorator==4.4.2
 defusedxml==0.6.0
 diff-match-patch==20200713
-distributed==2.30.1
+distributed==2021.10.0
 distro==1.6.0
 docker==4.4.4
 docker-pycreds==0.4.0
