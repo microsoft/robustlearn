@@ -272,7 +272,7 @@ QtAwesome==1.0.1
 qtconsole==4.7.7
 QtPy==1.9.0
 regex==2020.10.15
-requests==2.25.1
+requests==2.31.0
 requests-ntlm==1.1.0
 requests-oauthlib==1.3.0
 rope==0.18.0
