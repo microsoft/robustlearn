@@ -1,6 +1,10 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
+import sys
+import os
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(base_path)
 import numpy as np
 import torch
 import torch.nn as nn
@@ -11,10 +15,6 @@ import copy
 from utils.prepare_data_dg_clip import *
 import utils.clip_util as clu
 from utils.config import img_param_init, set_random_seed
-import sys
-import os
-base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(base_path)
 
 
 def toeval(model):
