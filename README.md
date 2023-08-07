@@ -25,6 +25,8 @@ Hosted projects:
   - [Code](./diversify/) | [Out-of-distribution Representation Learning for Time Series Classification](https://arxiv.org/abs/2209.07027)
 - **DRM** (KDD 2023, #OOD):
   - [Code](./drm/) | [Domain-Specific Risk Minimization for Out-of-Distribution Generalization](https://arxiv.org/abs/2208.08661)
+- **DDLearn** (KDD 2023, #OOD):
+  - [Code](./ddlearn/) | [Generalizable Low-Resource Activity Recognition with Diverse and Discriminative Representation Learning](https://arxiv.org/abs/2306.04641)
 - **SDMix** (IMWUT 2022, #OOD): 
   - [Code](./sdmix/) | [Semantic-Discriminative Mixup for Generalizable Sensor-based Cross-domain Activity Recognition](http://arxiv.org/abs/2206.06629)
 - **MARC** (ACML 2022, #Long-tail): 
