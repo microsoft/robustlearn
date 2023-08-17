@@ -23,10 +23,10 @@ DSADS. UCI Daily and Sports Data Set collects data from 8 subjects around 1.14M 
 In the following links are data(100% propotion of training data with seed=1 as examples, you can random sample different propotion from the training data to simulate the low-resource regime) after preprocessing according to the paper. You can get different propotion of training data with the 100% data.
 
 ```
-wget https://wjdcloud.blob.core.windows.net/dataset/qxx/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t0_seed1_scalerminmax.pkl 
-wget https://wjdcloud.blob.core.windows.net/dataset/qxx/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t1_seed1_scalerminmax.pkl 
-wget https://wjdcloud.blob.core.windows.net/dataset/qxx/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t2_seed1_scalerminmax.pkl 
-wget https://wjdcloud.blob.core.windows.net/dataset/qxx/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t3_seed1_scalerminmax.pkl 
+wget https://wjdcloud.blob.core.windows.net/dataset/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t0_seed1_scalerminmax.pkl 
+wget https://wjdcloud.blob.core.windows.net/dataset/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t1_seed1_scalerminmax.pkl 
+wget https://wjdcloud.blob.core.windows.net/dataset/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t2_seed1_scalerminmax.pkl 
+wget https://wjdcloud.blob.core.windows.net/dataset/kdd-act-dsads/dsads_crosssubject_rawaug_rate1.0_t3_seed1_scalerminmax.pkl 
 ```
 
 ## How to run
