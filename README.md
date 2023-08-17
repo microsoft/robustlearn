@@ -45,6 +45,7 @@ Related repos:
   - Prompt benchmark for large language models: [[PromptBench: adverarial robustness of prompts of LLMs](https://github.com/microsoft/promptbench)]
   - Evlauation of large language models: [[LLM-eval](https://llm-eval.github.io/)]
   - Federated learning: [[PersonalizedFL: library for personalized federated learning](https://github.com/microsoft/PersonalizedFL)]
+  - Enhancement of large language models: [[LLM-enhance](https://llm-enhance.github.io/)]
 
 
 ## Contributing
