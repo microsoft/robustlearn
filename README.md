@@ -21,8 +21,12 @@
 Latest research in robust machine learning, including adversarial/backdoor attack and defense, out-of-distribution (OOD) generalization, and safe transfer learning.
 
 Hosted projects:
+
+- **RiFT** (ICCV 2023, #Adversarial Robustness, #Generalization, #OOD)
+  - [Code](./RiFT/) | [Improving Generalization of Adversarial Training via Robust Critical Fine-Tuning](https://arxiv.org/abs/2308.02533)
+  
 - **Diversify** (ICLR 2023, #OOD):
-  - [Code](./diversify/) | [Out-of-distribution Representation Learning for Time Series Classification](https://arxiv.org/abs/2209.07027)
+  - [Code](./diversify/) | [Out-of-distribution Representatio[n Learning for Time Series Classification](https://arxiv.org/abs/2209.07027)
 - **DRM** (KDD 2023, #OOD):
   - [Code](./drm/) | [Domain-Specific Risk Minimization for Out-of-Distribution Generalization](https://arxiv.org/abs/2208.08661)
 - **DDLearn** (KDD 2023, #OOD):
