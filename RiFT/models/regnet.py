@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''RegNet in PyTorch.
 
 Paper: "Designing Network Design Spaces".

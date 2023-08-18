@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''Fully Connected NN'''
 import torch.nn as nn
 import torch.nn.functional as F

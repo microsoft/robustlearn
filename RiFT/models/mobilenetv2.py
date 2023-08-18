@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''MobileNetV2 in PyTorch.
 
 See the paper "Inverted Residuals and Linear Bottlenecks:

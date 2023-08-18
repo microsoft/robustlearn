@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 # https://github.com/lucidrains/vit-pytorch/blob/main/vit_pytorch/vit_pytorch.py
 
 

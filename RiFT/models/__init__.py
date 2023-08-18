@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 from .vgg import *
 from .dpn import *
 from .lenet import *

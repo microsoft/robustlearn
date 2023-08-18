@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''EfficientNet in PyTorch.
 
 Paper: "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks".

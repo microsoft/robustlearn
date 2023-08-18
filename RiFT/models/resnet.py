@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''ResNet in PyTorch.
 
 For Pre-activation ResNet, see 'preact_resnet.py'.

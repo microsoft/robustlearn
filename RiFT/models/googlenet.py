@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''GoogLeNet with PyTorch.'''
 import torch
 import torch.nn as nn

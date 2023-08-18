@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''ShuffleNetV2 in PyTorch.
 
 See the paper "ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design" for more details.

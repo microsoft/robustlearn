@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 from torch.utils.data.sampler import SubsetRandomSampler
 from copy import deepcopy
 from tqdm import tqdm

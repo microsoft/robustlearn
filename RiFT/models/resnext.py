@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''ResNeXt in PyTorch.
 
 See the paper "Aggregated Residual Transformations for Deep Neural Networks" for more details.

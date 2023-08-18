@@ -1,4 +1,6 @@
-from collections import defaultdict, abc as container_abcs
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 import torch
 import torch.optim as optim
 

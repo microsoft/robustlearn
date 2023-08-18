@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''MobileNet in PyTorch.
 
 See the paper "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications"

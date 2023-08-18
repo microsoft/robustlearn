@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''SENet in PyTorch.
 
 SENet is the winner of ImageNet-2017. The paper is not released yet.

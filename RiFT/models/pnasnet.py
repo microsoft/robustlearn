@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
 '''PNASNet in PyTorch.
 
 Paper: Progressive Neural Architecture Search
