@@ -28,7 +28,9 @@ For other datasets:
 3. [CIFAR100-C](https://drive.google.com/drive/folders/1HDVw6CmX3HiG0ODFtI75iIfBDxSiSz2K)
 4. [Tiny-ImageNet-C](https://berkeley.app.box.com/s/6zt1qzwm34hgdzcvi45svsb10zspop8a)
 
-After downloading these datasets, move them to ./data. The images in Tiny-ImageNet is 64x64 with 200 classes.
+After downloading these datasets, move them to ./data. 
+
+The images in Tiny-ImageNet datasets are 64x64 with 200 classes.
 
 ## Robust Critical Fine-Tuning
 
@@ -94,10 +96,10 @@ The non-robust-critical module of each model on each dataset are summarized as f
 
 ```
 @inproceedings{zhu2023improving,
-      title={Improving Generalization of Adversarial Training via Robust Critical Fine-Tuning}, 
-     author={Zhu, Kaijie and Hu, Xixu and Wang, Jindong and Xie, Xing and Yang, Ge },
-     year={2023},
-	 booktitle={International Conference on Computer Vision},
+	title={Improving Generalization of Adversarial Training via Robust Critical Fine-Tuning}, 
+	author={Zhu, Kaijie and Hu, Xixu and Wang, Jindong and Xie, Xing and Yang, Ge },
+	year={2023},
+	booktitle={International Conference on Computer Vision},
 }
 ```
 
