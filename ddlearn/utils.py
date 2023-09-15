@@ -77,6 +77,12 @@ def param_init(args):
     if dataset == 'dsads':
         args.n_act_class = 19
         args.n_domain = 4
+    elif dataset == 'pamap':
+        args.n_act_class = 8
+        args.n_domain = 4
+    elif dataset == 'uschad':
+        args.n_act_class = 12
+        args.n_domain = 5
     else:
         print('No matching dataset.')
     return args

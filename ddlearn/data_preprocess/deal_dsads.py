@@ -31,7 +31,6 @@ def load_data(root_path, winsize, overlapsize):
             #  merge p/ s01-s60 as data_sub
             data_sub = np.zeros((1, 45))
             for j in range(len(subname_list)):
-                # subfile = subname_list[j]
                 data_i = []
                 if j < 9:
                     name = '0' + str(j+1)

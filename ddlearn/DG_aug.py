@@ -16,7 +16,10 @@ class DDLearn(nn.Module):
         self.n_aug_class = n_aug_class
         self.dataset = dataset
         self.dp = dp
-        self.feature_module = net.Network(n_feature, dataset)
+        if dataset == 'uschad':
+            self.feature_module = net.Network_usc(n_feature, dataset)
+        else:
+            self.feature_module = net.Network(n_feature, dataset)
         self.act_cls = nn.Linear(n_feature, n_act_class)
         self.aug_cls = nn.Linear(n_feature, n_aug_class)
         self.criterion = nn.CrossEntropyLoss()
