@@ -1,15 +1,15 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
-import pickle
-from sklearn.model_selection import train_test_split
-import numpy as np
-import utils
-from main import args_parse
-from raw_aug_loader import set_param
 import sys
 import os
 sys.path.append(os.path.dirname(sys.path[0]))
+from raw_aug_loader import set_param
+from main import args_parse
+import utils
+import numpy as np
+from sklearn.model_selection import train_test_split
+import pickle
 
 # ============ PAMAP2 ===============
 
