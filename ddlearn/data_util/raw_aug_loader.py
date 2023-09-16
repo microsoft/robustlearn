@@ -128,9 +128,17 @@ def reshape_data(x, dataset, when):
     if when == 'begin':
         if dataset == 'dsads':
             x = x.reshape(-1, 45)
+        elif dataset == 'uschad':
+            x = x.reshape(-1, 6)
+        elif dataset == 'pamap':
+            x = x.reshape(-1, 27)
     elif when == 'end':
         if dataset == 'dsads':
             x = x.reshape(-1, 125, 45)
+        elif dataset == 'uschad':
+            x = x.reshape(-1, 500, 6)
+        elif dataset == 'pamap':
+            x = x.reshape(-1, 512, 27)
     else:
         print("error")
     return x
@@ -171,15 +179,17 @@ def pick_data(data, data_type, data_name, src):
 def set_param(dataset):
     if dataset == 'dsads':
         n_domain = 4
-    else:
-        print("no matching dataset")
+    elif dataset == 'pamap':
+        n_domain = 4
+    elif dataset == 'uschad':
+        n_domain = 5
     return n_domain
 
 
 if __name__ == "__main__":
     args = args_parse()
     root_path = "/home/data/process/"
-    for args.dataset in ['dsads']:
+    for args.dataset in ['dsads','pamap','uschad']:
         n_domain = set_param(args.dataset)
         for args.scaler_method in ['minmax']:
             for remain_data_rate in [0.2, 0.4, 0.6, 0.8, 1.0]:
@@ -207,4 +217,3 @@ if __name__ == "__main__":
                         }
                         with open(save_path, 'wb') as f:
                             pickle.dump(raw_and_aug, f)
-    print("successful")

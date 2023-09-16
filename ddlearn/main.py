@@ -41,9 +41,9 @@ def args_parse():
     parser.add_argument('--root_path', type=str,
                         default="/home/ddlearn/data/")
     parser.add_argument('--data_save_path', type=str,
-                        default='/home/ddlearn/data/')
+                        default="/home/ddlearn/data/")
     parser.add_argument('--save_path', type=str,
-                        default="/home/ddlearn/results/")
+                        default="/home/results/")
 
     args = parser.parse_args()
     args.step_per_epoch = 100000000000
