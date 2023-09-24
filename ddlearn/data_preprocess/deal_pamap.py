@@ -14,7 +14,7 @@ def load_data(root_path, winsize, overlap):
         filename = file_list[filenum]
         data_i = np.loadtxt(os.path.join(root_path, filename))
         subject = int(filename.split('0')[1].split('.')[0])
-        x_i = np.hstack((data_i[:, 4:7], data_i[:, 7:13], data_i[:, 21:24],
+        x_i = np.hstack((data_i[:, 4:7], data_i[:, 10:16], data_i[:, 21:24],
                          data_i[:, 27:33], data_i[:, 38:41], data_i[:, 44:50]))
         y_i = data_i[:, 1]
         tx, ty, ts = getwin_replace(x_i, y_i, subject,
