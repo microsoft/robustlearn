@@ -13,15 +13,15 @@ import numpy as np
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=str,
-                        default='facebook/opt-66b')
+                        default='gpt-3.5-turbo')
     parser.add_argument(
         '--data_path', type=str, default='data/advglue/dev.json')
-    parser.add_argument('--task', type=str, default='sst2')
+    parser.add_argument('--task', type=str, default='mnli')
     parser.add_argument('--gpu', type=int, default=0)
     parser.add_argument('--save_file', type=str, default='result/result.csv')
-    parser.add_argument('--service', type=str, default='hug')
+    parser.add_argument('--service', type=str, default='chat')
     parser.add_argument('--dataset', type=str, default='advglue')
-    parser.add_argument('--eval', action='store_true', default=False)
+    parser.add_argument('--eval', action='store_true', default=True)
     args = parser.parse_args()
     return args
 
@@ -126,12 +126,12 @@ def stat(args):
                         label = label.strip('.')
                         
                     try:
+                        label = label.lower()
                         pred_label.append(LABEL_TO_ID[args.task][label])
                     except:
-                        print(orig)
                         pred_label.append(-1)
                 pred_label = np.array(pred_label)
-
+                print(pred_label)
                 if args.dataset == 'flipkart':
                     true_label = []
                     for label in labels['true_label']:

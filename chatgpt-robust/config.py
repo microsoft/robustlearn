@@ -35,8 +35,12 @@ MODEL_SET = {
         # 'text-ada-001',
         'text-davinci-002',
         'text-davinci-003',
+        
     ],
-    'chat': ['bert-large-uncased']
+    'chat': [
+        'gpt-3.5-turbo'
+    ],
+    # 'chat': ['bert-large-uncased']
 }
 
 PROMPT_SET = {
@@ -163,3 +167,5 @@ PROMPT_SET2 = {
         'Translate the following sentence from Chinese to English. '
     ]
 }
+
+OPENAI_API = "Your API key"

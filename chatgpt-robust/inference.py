@@ -114,8 +114,17 @@ class Inference(object):
 
         elif self.service.__contains__('chat'):
             # use chatgpt models
-            # use the library from (https://github.com/mmabrouk/chatgpt-wrapper) to generate responses from official website (https://chat.openai.com/chat).
-            pass
+            import openai
+            from config import OPENAI_API
+            gpt_model = "gpt-3.5-turbo-instruct"
+            openai.api_key = OPENAI_API
+            response = openai.Completion.create(
+                model=gpt_model,
+                prompt=prompt+sentence,
+                max_tokens=20,
+                temperature=0
+            )
+            pred = response['choices'][0]['text']
         return pred
 
     def predict_trans(self, sentence, prompt=None):
