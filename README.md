@@ -22,11 +22,14 @@ Latest research in robust machine learning, including adversarial/backdoor attac
 
 Hosted projects:
 
+- **NMtune** (ICLR 2024, #Generalization, #OOD)
+  - [Code](https://github.com/Hhhhhhao/Noisy-Model-Learning) | [Understanding and Mitigating the Label Noise in Pre-training on Downstream Tasks](https://arxiv.org/abs/2309.17002)
+
 - **RiFT** (ICCV 2023, #Adversarial Robustness, #Generalization, #OOD)
   - [Code](./RiFT/) | [Improving Generalization of Adversarial Training via Robust Critical Fine-Tuning](https://arxiv.org/abs/2308.02533)
   
 - **Diversify** (ICLR 2023, #OOD):
-  - [Code](./diversify/) | [Out-of-distribution Representatio[n Learning for Time Series Classification](https://arxiv.org/abs/2209.07027)
+  - [Code](./diversify/) | [Out-of-distribution Representation Learning for Time Series Classification](https://arxiv.org/abs/2209.07027)
 - **DRM** (KDD 2023, #OOD):
   - [Code](./drm/) | [Domain-Specific Risk Minimization for Out-of-Distribution Generalization](https://arxiv.org/abs/2208.08661)
 - **DDLearn** (KDD 2023, #OOD):
