@@ -22,6 +22,9 @@ Latest research in robust machine learning, including adversarial/backdoor attac
 
 Hosted projects:
 
+- **SpecFormer** (ECCV 2024, #Adversarial Robustness)
+  - [Code](./specformer/) | [SpecFormer: Guarding Vision Transformer Robustness via Maximum Singular Value Penalization](https://arxiv.org/abs/2402.03317)   
+
 - **NMtune** (ICLR 2024, #Generalization, #OOD)
   - [Code](https://github.com/Hhhhhhao/Noisy-Model-Learning) | [Understanding and Mitigating the Label Noise in Pre-training on Downstream Tasks](https://arxiv.org/abs/2309.17002)
 
