@@ -1,0 +1,9 @@
+# checkpoint*
+/data/cifar-10-batches-py/
+cifar-10-python.tar.gz
+*.tar.gz
+**/*.pyc
+__pycache__/
+**/checkpoint_*
+**/checkpoint-*.pth.tar
+**/*.pth.tar
